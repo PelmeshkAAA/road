@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="">
+    <script src="jquery.js"></script>
+    <style>
+        body {
+            background: url("zemlyanika-yagody-mnogo.jpg") no-repeat fixed center;
+        }
+
+        .block1 {
+            max-width: 1200px;
+            margin: auto;
+            -webkit-box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            -moz-box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            background: white;
+            padding: 20px;
+            text-align: center;
+            font-family: "Agency FB";
+            border-radius: 31px;
+            -moz-border-radius: 31px;
+            -webkit-border-radius: 31px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .quadrat {
+            background: darkred;
+            width: 150px;
+            height 100px;
+            -webkit-box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            -moz-box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            box-shadow: 26px 26px 73px 3px rgba(10, 8, 10, 0.84);
+            color: white;
+            font-family: "Agency FB";
+            text-align: center;
+            border-radius: 100px 100px 0px 0px;
+            -moz-border-radius: 100px 100px 0px 0px;
+            -webkit-border-radius: 100px 100px 0px 0px;
+        }
+
+        @media (max-width: 540px) {
+            .products {
+                flex-direction: column;
+            }
+
+            .quadrat {
+                margin-bottom: 10px;
+            }
+
+            .quadrat:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .storm {
+            position: fixed;
+            width: 400px;
+            display: none;
+            right: 10px;
+            top: 10px;
+            padding: 15px;
+            background: white;
+            border-left: darkred;
+            color: darkred;
+            text-align: center;
+            font-family: "Agency FB";
+        }
+    </style>
+</head>
+<body>
+<div class="storm">Thank you!</div>
+<div class="block1">
+    <h1>"The Marry`s Home"</h1></div>
+<div class="block1">
+    <div class="products">
+        <div class="quadrat">
+            <h1>Sweets</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>2$</h1>
+            <img src="konfety-sladosti-ledency-marmelad.jpg" height="110" width="150"/>
+        </div>
+        <div class="quadrat">
+            <h1>Pie</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>3$</h1>
+            <img src="380716-svetik.jpg" height="110" width="150"/>
+        </div>
+        <div class="quadrat">
+            <h1>Chiken</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>5.25$</h1>
+            <img src="s1200.jpg" height="110" width="150"/>
+        </div>
+    </div>
+</div>
+<div class="block1">
+    <div class="products">
+        <div class="quadrat">
+            <h1>Burger</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>3.15$</h1>
+            <img src="Burger-Photos.jpg" height="110" width="150"/>
+        </div>
+        <div class="quadrat">
+            <h1>Nuggets</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>2.5$</h1>
+            <img src="maxresdefault-11-1.jpg" height="110" width="150"/>
+        </div>
+        <div class="quadrat">
+            <h1>Milk</h1>
+            <button onclick="$('.storm').fadeIn(1200);">BUY</button>
+            <h1>1.75$</h1>
+            <img src="milk-allergy.jpg" height="110" width="150"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

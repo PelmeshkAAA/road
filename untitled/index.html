@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="">
+    <script src="jquery.js"></script>
+    <style>
+        body{
+            background: url("skyrim-krasochnyj-fentezi-enb-konfig.jpg") no-repeat fixed center;
+            background-size: cover;
+        }
+        .container1 {
+            width: 1200px;
+            margin: auto;
+            padding: 15px;
+            color: black;
+            background: white;
+            border: 4px inset yellowgreen;
+            -webkit-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            -moz-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+        }
+
+        .container2 {
+            width: 1200px;
+            margin: auto;
+            padding: 15px;
+            background: white;
+            border: 4px inset yellowgreen;
+            text-align: center;
+            -webkit-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            -moz-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+        }
+
+        .container3 {
+            width: 1200px;
+            padding: 15px;
+            margin: auto;
+            background: white;
+            border: 4px inset yellowgreen;
+            text-align: center;
+            -webkit-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            -moz-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+        }
+
+        .container4 {
+            position: fixed;
+            width: 400px;
+            display: none;
+            right: 10px;
+            top: 10px;
+            padding: 15px;
+            background: white;
+            border: 4px inset yellowgreen;
+            text-align: center;
+            -webkit-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            -moz-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            text-shadow:0px 5px 10px #fdff00;
+            color: green;
+            -webkit-transition: background 300ms;
+            -moz-transition: background 300ms;
+            -ms-transition: background 300ms;
+            -o-transition: background 300ms;
+            transition: background 300ms;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container4:hover{
+            background: yellowgreen;
+        }
+        .btn{
+            padding: 15px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background: white;
+            border: 2px inset darkred;
+            color: darkred;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-transition: background 300ms;
+            -moz-transition: background 300ms;
+            -ms-transition: background 300ms;
+            -o-transition: background 300ms;
+            transition: background 300ms;
+        }
+        .btn:hover{
+            background: yellowgreen;
+        }
+        .btn:active{
+            background: chartreuse;
+        }
+        .container5{
+            position: fixed;
+            width: 400px;
+            display: none;
+            right: 10px;
+            top: 10px;
+            padding: 15px;
+            background: white;
+            border: 4px inset yellowgreen;
+            text-align: center;
+            -webkit-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            -moz-box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            box-shadow: inset 38px 48px 46px -25px rgba(78,117,27,0.76);
+            text-shadow:0px 5px 10px #fdff00;
+            color: green;
+            -webkit-transition: background 300ms;
+            -moz-transition: background 300ms;
+            -ms-transition: background 300ms;
+            -o-transition: background 300ms;
+            transition: background 300ms;
+        }
+        .container5:hover{
+            background: yellowgreen;
+        }
+        .block{
+            background: green;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+        .wrapper{
+            margin: auto;
+            max-width: 1200px;
+            background: white;
+        }
+        .products{
+            display: flex;
+
+        }
+        @media(max-width: 540px){
+            .products{
+                flex-direction: column;}
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#sendMessage').click(function () {
+                $('.container5').fadeIn(400);
+            });
+            $('#close').click(function () {
+                $('.container5').fadeOut(300);
+
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="btn" id="sendMessage">
+    <h1>OPEN</h1>
+</div>
+<div class="container5" >
+    <h1>SHUT UP AND TAKE MY MONEY!</h1>
+    <div class="close" id="close">X</div>
+</div>
+<div class="container1">
+    <h1>
+        Урал Нургалиев <br>
+    </h1>
+    <h3>
+        Мне 15 лет и я учусь в гимназии. Я люблю видеоигры и научную фантастику.<br>
+        Мне нравится общаться с людьми и узнавать что-то новое. <br>
+        Добавляйтесь в друзья, пообщаемся!<button onclick="$('.container4').fadeIn(1200);">Follow</button>
+    </h3>
+    <img src="news_icon_1983.jpg"  height="563" width="1000"/>
+</div>
+<div class="container2">
+    <h2>Опубликовано 3 часа назад</h2>
+    <h3>
+        На днях был в пиццерии у Чака. Невероятно клевое место для посиделок <br>
+        с друзьями и обслуживание на уровне!
+    </h3>
+    <hr/>
+    <h2>Опубликовано 4 часа назад</h2>
+    <h3>
+        Внимание! 19 апреля в Доме культуры пройдет выставка картин наших <br>
+        художников. Приходите с друзьями! <br>
+        <img src="def518cd2e59a43145dd3606a7a41163.jpg" height="1014"
+             width="811"/>
+    </h3>
+</div>
+<div class="container3">
+    <h4>Спасибо что пользуетесь нашим сайтом!</h4>
+    <hr/>
+    <h4>Подробнее о нас вы можете узнать в нашей группе.</h4>
+</div>
+<div class="container4">
+    <div class="close" onclick="$('.container4').fadeOut(300);">X</div>
+    <div class="title"><h1>Thank you!</h1></div>
+</div>
+</body>
+</html>
